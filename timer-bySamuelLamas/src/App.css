@@ -37,7 +37,7 @@ html, body {
   position: relative;
   font-family: sans-serif;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.074); /* Mantenido el color de fondo original */
+  background-color: rgba(255, 255, 255, 0.074);
   border: 1px solid rgba(255, 255, 255, 0.222);
   backdrop-filter: blur(20px);
   border-radius: 0.7rem;
@@ -59,7 +59,6 @@ html, body {
   border: 1px solid rgba(255, 255, 255, 0.454);
 }
 
-/* Estilo para el título principal */
 .content-container .title {
   font-size: 3rem;
   font-weight: 700;
@@ -67,8 +66,8 @@ html, body {
   margin-bottom: 1rem;
   color: #333;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem; /* Añadir relleno */
-  border-radius: 10px; /* Bordes redondeados */
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
 }
 

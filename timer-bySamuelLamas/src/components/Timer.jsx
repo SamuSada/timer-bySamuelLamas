@@ -19,31 +19,29 @@ const Timer = () => {
   const BUTTON_SOUND_VOLUME = 0.1; // Volumen de los sonidos de los botones
   const TIMER_SOUND_VOLUME = 1.0; // Volumen del sonido del temporizador
 
-  // Función para reproducir el sonido de los botones
+  // Funciones para control de sonido
   const playButtonSound = () => {
     buttonSoundRef.current.volume = BUTTON_SOUND_VOLUME;
     buttonSoundRef.current.play();
   };
 
-  // Función para reproducir el sonido del temporizador
   const playTimerSound = () => {
     timerSoundRef.current.volume = TIMER_SOUND_VOLUME;
     timerSoundRef.current.play();
   };
 
-  // Función para incrementar horas
+
+  // Funciones para control de horas, minutos, segundos
   const incrementHours = () => {
     setHours((prevHours) => (prevHours + 1) % 24);
     playButtonSound();
   };
 
-  // Función para decrementar horas
   const decrementHours = () => {
     setHours((prevHours) => (prevHours === 0 ? 23 : prevHours - 1));
     playButtonSound();
   };
 
-  // Función para incrementar minutos
   const incrementMinutes = () => {
     setMinutes((prevMinutes) => {
       if (prevMinutes === 59) {
@@ -56,7 +54,6 @@ const Timer = () => {
     playButtonSound();
   };
 
-  // Función para decrementar minutos
   const decrementMinutes = () => {
     setMinutes((prevMinutes) => {
       if (prevMinutes === 0) {
@@ -70,7 +67,6 @@ const Timer = () => {
     playButtonSound();
   };
 
-  // Función para incrementar segundos
   const incrementSeconds = () => {
     setSeconds((prevSeconds) => {
       if (prevSeconds === 59) {
@@ -83,7 +79,6 @@ const Timer = () => {
     playButtonSound();
   };
 
-  // Función para decrementar segundos
   const decrementSeconds = () => {
     setSeconds((prevSeconds) => {
       if (prevSeconds === 0) {
@@ -102,23 +97,21 @@ const Timer = () => {
     playButtonSound();
   };
 
-  // Función para iniciar el temporizador
+  // Funciones para el estado temporizador
   const startTimer = () => {
     setIsRunning(true);
     playButtonSound();
   };
 
-  // Función para pausar el temporizador
   const pauseTimer = () => {
     setIsRunning(false);
     playButtonSound();
   };
 
-  // Función para reiniciar el temporizador
   const resetTimer = () => {
     setHours(0);
     setMinutes(0);
-    setSeconds(10); // Restablecer el valor inicial del temporizador
+    setSeconds(0);
     setIsRunning(false);
     playButtonSound();
   };

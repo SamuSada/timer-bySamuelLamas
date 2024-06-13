@@ -1,24 +1,22 @@
-/* Timer.css */
-
 .timer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* Añadimos un padding para espaciar el contenido */
+  padding: 20px;
 }
 
 .timer-display {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px; /* Añadimos un margen inferior */
+  margin-bottom: 20px;
 }
 
 .timer-display > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 10px; /* Reducimos el margen entre los elementos */
+  margin: 0 10px;
 }
 
 .timer-display span {
@@ -33,75 +31,74 @@
 
 .timer-display button {
   font-family: Arial, sans-serif;
-  font-size: 2rem; /* Tamaño de fuente */
-  font-weight: bold; /* Mantenemos el peso */
-  color: #333; /* Color de texto */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
   background-color: transparent;
   padding: 10px 20px;
-  margin: 20px; /* Reducimos el margen */
+  margin: 20px;
   border-radius: 10px;
   border: none;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  display: inline-flex; /* Alineamos los elementos horizontalmente */
-  align-items: center; /* Centramos verticalmente */
-  justify-content: center; /* Centramos horizontalmente */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timer-display button:hover {
-  transform: scale(1.1); /* Escala al hacer hover */
+  transform: scale(1.1);
   box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5);
 }
 
 .timer-controls {
   display: flex;
-  justify-content: center; /* Centramos horizontalmente */
-  margin-top: 20px; /* Espaciado superior */
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .timer-controls button {
   font-family: Arial, sans-serif;
-  font-size: 2rem; /* Tamaño de fuente */
+  font-size: 2rem;
   padding: 10px 20px;
-  margin: 10px; /* Reducimos el margen */
+  margin: 10px;
   border: none;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
-  background-color: transparent; /* Fondo transparente */
-  color: #333; /* Color de texto */
+  background-color: transparent;
+  color: #333;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  display: inline-flex; /* Alineación horizontal */
-  align-items: center; /* Centrado vertical */
-  justify-content: center; /* Centrado horizontal */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timer-controls button:hover {
-  transform: scale(1.1); /* Escala al hacer hover */
+  transform: scale(1.1);
   box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5);
 }
 
-/* Media Queries para pantallas más pequeñas */
 @media (max-width: 768px) {
   .timer-display > div {
-    margin: 5px; /* Reducimos el margen entre los elementos en pantallas pequeñas */
+    margin: 5px;
   }
 
   .timer-display span {
-    font-size: 3rem; /* Reducimos el tamaño de la fuente para números en pantallas pequeñas */
-    padding: 8px 15px; /* Ajustamos el padding */
+    font-size: 3rem;
+    padding: 8px 15px;
   }
 
   .timer-display button {
-    font-size: 1.5rem; /* Reducimos el tamaño de fuente para botones en pantallas pequeñas */
-    padding: 8px 15px; /* Ajustamos el padding */
-    margin: 5px; /* Reducimos el margen entre botones en pantallas pequeñas */
+    font-size: 1.5rem;
+    padding: 8px 15px;
+    margin: 5px;
   }
 
   .timer-controls button {
-    font-size: 1.5rem; /* Reducimos el tamaño de fuente para botones de control en pantallas pequeñas */
-    padding: 8px 15px; /* Ajustamos el padding */
-    margin: 5px; /* Reducimos el margen entre botones en pantallas pequeñas */
+    font-size: 1.5rem;
+    padding: 8px 15px;
+    margin: 5px;
   }
 }
