@@ -1,0 +1,107 @@
+/* Timer.css */
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Añadimos un padding para espaciar el contenido */
+}
+
+.timer-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Añadimos un margen inferior */
+}
+
+.timer-display > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px; /* Reducimos el margen entre los elementos */
+}
+
+.timer-display span {
+  font-family: Arial, sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.timer-display button {
+  font-family: Arial, sans-serif;
+  font-size: 2rem; /* Tamaño de fuente */
+  font-weight: bold; /* Mantenemos el peso */
+  color: #333; /* Color de texto */
+  background-color: transparent;
+  padding: 10px 20px;
+  margin: 20px; /* Reducimos el margen */
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex; /* Alineamos los elementos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+  justify-content: center; /* Centramos horizontalmente */
+}
+
+.timer-display button:hover {
+  transform: scale(1.1); /* Escala al hacer hover */
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5);
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center; /* Centramos horizontalmente */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.timer-controls button {
+  font-family: Arial, sans-serif;
+  font-size: 2rem; /* Tamaño de fuente */
+  padding: 10px 20px;
+  margin: 10px; /* Reducimos el margen */
+  border: none;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+  background-color: transparent; /* Fondo transparente */
+  color: #333; /* Color de texto */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex; /* Alineación horizontal */
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+}
+
+.timer-controls button:hover {
+  transform: scale(1.1); /* Escala al hacer hover */
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .timer-display > div {
+    margin: 5px; /* Reducimos el margen entre los elementos en pantallas pequeñas */
+  }
+
+  .timer-display span {
+    font-size: 3rem; /* Reducimos el tamaño de la fuente para números en pantallas pequeñas */
+    padding: 8px 15px; /* Ajustamos el padding */
+  }
+
+  .timer-display button {
+    font-size: 1.5rem; /* Reducimos el tamaño de fuente para botones en pantallas pequeñas */
+    padding: 8px 15px; /* Ajustamos el padding */
+    margin: 5px; /* Reducimos el margen entre botones en pantallas pequeñas */
+  }
+
+  .timer-controls button {
+    font-size: 1.5rem; /* Reducimos el tamaño de fuente para botones de control en pantallas pequeñas */
+    padding: 8px 15px; /* Ajustamos el padding */
+    margin: 5px; /* Reducimos el margen entre botones en pantallas pequeñas */
+  }
+}
